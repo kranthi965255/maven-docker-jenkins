@@ -1,5 +1,5 @@
 FROM openjdk:8
 EXPOSE 8080
-ADD target/webapp.war webapp.war
+ADD /var/lib/jenkins/workspace/Texple/webapp/target/webapp.war webapp.war
 ENTRYPOINT ["java",|"-war","/webapp.war"
 
